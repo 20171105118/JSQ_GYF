@@ -44,11 +44,11 @@ class ViewController: UIViewController {
             return
         }
         if FH == "" {
-            SZ3 = SZ3 + Int(value)!
+            SZ3 = SZ3 + value
             resultLabel.text = SZ3
         }
         else {
-            SZ2 = SZ2 + Int(value)!
+            SZ2 = SZ2 + value
             resultLabel.text = SZ3
         }
     }
