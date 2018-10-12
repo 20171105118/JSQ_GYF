@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SZ1(_ sender: UIButton) {
-        let value = sender.currentTitle
+        let value:String = (sender as AnyObject).currentTitle
         if value == "+" || value == "-" || value == "*" || value == "/" {
             FH = value
             return
