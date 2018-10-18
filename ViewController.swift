@@ -19,13 +19,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func SZ1(_ sender: UIButton) {
-        let value:String = (sender as AnyObject).currentTitle
-        if value == "+" || value == "-" || value == "*" || value == "/" {
-            FH = value
+    @IBAction func But(_ sender: UIButton) {
+        let buttonTitle:String = (sender as AnyObject).currentTitle!
+        if buttonTitle == "+" || value == "-" || value == "*" || value == "/" {
+            FH = buttonTitle
             return
         }
-        else if value == "=" {
+        else if buttonTitle == "=" {
             var result = 0
             switch FH {
             case "+":
@@ -44,11 +44,11 @@ class ViewController: UIViewController {
             return
         }
         if FH == "" {
-            SZ3 = SZ3 + value
+            SZ3 = SZ3 + buttonTitle
             resultLabel.text = SZ3
         }
         else {
-            SZ2 = SZ2 + value
+            SZ2 = SZ2 + buttonTitle
             resultLabel.text = SZ3
         }
     }
