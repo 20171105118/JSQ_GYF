@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         {
             FH = buttonTitle
             return
-        }
+        }    
         else if buttonTitle == "="
         {
             
